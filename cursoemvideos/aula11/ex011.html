@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Onde voce nasceu? <input type="text" name="txtnac" id="txtnac"> 
+    <input type="button" value="Verificar" onclick = clicar() >
+    <div id="res"></div>
+    <script>
+        
+        function clicar(){
+            var nac = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('input#res') 
+            res.innerHTML = `${nac}` 
+}
+
+
+    </script>
+</body>
+</html>
